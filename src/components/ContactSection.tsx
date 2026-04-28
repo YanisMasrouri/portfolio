@@ -44,6 +44,8 @@ export function ContactSection() {
             <div className="grid grid-cols-2 gap-3">
               <a
                 href={portfolioData.contact.github}
+                target="_blank"
+                rel="noreferrer"
                 className="flex items-center justify-center gap-2 rounded-2xl border border-white/10 bg-black/20 px-5 py-4 text-white/75 transition hover:bg-white hover:text-black"
               >
                 <ExternalLink size={18} />
@@ -52,6 +54,8 @@ export function ContactSection() {
 
               <a
                 href={portfolioData.contact.linkedin}
+                target="_blank"
+                rel="noreferrer"
                 className="flex items-center justify-center gap-2 rounded-2xl border border-white/10 bg-black/20 px-5 py-4 text-white/75 transition hover:bg-white hover:text-black"
               >
                 <ExternalLink size={18} />

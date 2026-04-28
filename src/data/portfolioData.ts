@@ -3,6 +3,7 @@ import type {
   PortfolioData,
   ProjectCategory,
 } from "../types/portfolioTypes";
+const baseUrl = import.meta.env.BASE_URL;
 
 export const portfolioData: PortfolioData = {
   identity: {
@@ -184,8 +185,8 @@ export const portfolioData: PortfolioData = {
   },
 
   cv: {
-    fr: "/cv/CV_Yanis_Masrouri_FR.pdf",
-    en: "/cv/CV_Yanis_Masrouri_EN.pdf",
+    fr: `${baseUrl}cv/CV_Yanis_Masrouri_FR.pdf`,
+    en: `${baseUrl}cv/CV_Yanis_Masrouri_EN.pdf`,
   },
 };
 
