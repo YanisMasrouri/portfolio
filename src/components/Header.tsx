@@ -35,6 +35,7 @@ export function Header() {
           <span className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/5 text-sm font-semibold text-white transition group-hover:bg-white group-hover:text-black">
             YM
           </span>
+
           <span className="hidden text-sm font-medium tracking-wide text-white/80 sm:block">
             {portfolioData.identity.name}
           </span>
@@ -54,8 +55,11 @@ export function Header() {
 
         <div className="hidden items-center gap-3 lg:flex">
           <LanguageToggle />
+
           <a
             href={portfolioData.cv[language]}
+            target="_blank"
+            rel="noreferrer"
             className="rounded-full bg-white px-4 py-2 text-sm font-semibold text-black transition hover:bg-white/80"
           >
             {portfolioData.actions.downloadCv[language]}
@@ -95,8 +99,12 @@ export function Header() {
             >
               {language === "fr" ? "English" : "Français"}
             </button>
+
             <a
               href={portfolioData.cv[language]}
+              target="_blank"
+              rel="noreferrer"
+              onClick={() => setIsMenuOpen(false)}
               className="rounded-2xl bg-white px-4 py-3 text-center text-sm font-semibold text-black"
             >
               CV
