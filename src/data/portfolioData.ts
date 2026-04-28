@@ -181,7 +181,7 @@ export const portfolioData: PortfolioData = {
     email: "yanismasrouri7@gmail.com",
     phone: "+33 6 45 59 45 67",
     github: "https://github.com/yanismasrouri",
-    linkedin: "https://www.linkedin.com/",
+    linkedin: "https://www.linkedin.com/in/yanis-masrouri-783679251/",
   },
 
   cv: {
